@@ -1,0 +1,443 @@
+
+  .ag2-home {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  top: 0;
+  left: 0;
+  }
+  
+  .ag2home-col {
+    flex: 0 0 calc(25% - 20px); 
+    margin-bottom: 20px;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .ag2home-col {
+      flex: 0 0 100%; 
+    }
+  }
+  
+  .ag2home-row {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    left: 0;
+    top: 2rem;
+    right: 0;
+  }
+  
+  .ag2home-card {
+    height: 70%;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #050505;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ag2home-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .ag2home-card-img-top {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .ag2home-card-body {
+    padding: 20px;
+    height: auto;
+  }
+  
+  .ag2home-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ag2home-start-button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .ag2home-start-button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .ag2home-icon {
+    transform: translate(4px);
+  }
+  
+  .ag2home-start-button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  .ag2home-start-button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .ag2home-icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  } 
+    /* edu cards */
+  
+   /* .edu-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+  }
+
+  
+  .edu-cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .edu-card {
+    width: calc(75% - 3rem); 
+    margin: 3rem;
+    box-sizing: border-box;
+    
+  }
+  
+  .edu-card img {
+    width: 100%;
+    height: 70%; 
+    object-fit: cover;
+  }
+  
+
+  @media (max-width: 767px) {
+    .edu-card {
+      width: calc(100% - 2rem);
+    }
+  }
+   */
+   .edu-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "poppins", sans-serif;
+  }
+  
+  .edu-cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-evenly;
+    width: 70%;
+    height: 50%;
+    
+  }
+  
+  .edu-card {
+    background-color: azure;
+    width: calc(33.333% - 1rem); 
+    margin: 0.5rem;
+    box-sizing: border-box;
+    left:260px;
+    right:120px;
+    top:80px;
+  }
+  
+  .edu-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 767px) {
+    .edu-card {
+      width: calc(100% - 2rem);
+    }
+  }
+  .edu-card-title{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+  }
+  /* Style for the primary education learn button */
+.btn.edu-learn-btn {
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.edu-learn-btn:hover {
+  background-color: #0056b3;
+}
+
+/* WordGames(sbar) */
+.wordgam-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "poppins", sans-serif;
+}
+
+.wordgam-cards {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
+  width: 70%;
+  height: 50%;
+}
+
+.wordgam-card {
+  background-color: azure;
+  width: calc(33.333% - 1rem);
+  margin: 0.5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.wordgam-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .wordgam-card {
+    width: calc(100% - 2rem);
+  }
+}
+
+.wordgam-card-title {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+/* Style for the primary wordgame learn button */
+.btn.wordgam-learn-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn.wordgam-learn-btn:hover {
+  background-color: #0056b3;
+}
+
+/* memory(sbar) */
+.Mem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "poppins", sans-serif;
+}
+
+.mem-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "poppins", sans-serif;
+}
+
+.mem-cards {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
+  width: 100%;
+  height: 70%;
+}
+
+.mem-card {
+  background-color: azure;
+  width: calc(33.333% - 1rem);
+  margin: 0.5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mem-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .mem-card {
+    width: calc(100% - 2rem);
+  }
+}
+
+.mem-card-title {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+/* Style for the primary memory learn button */
+.btn.mem-learn-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn.mem-learn-btn:hover {
+  background-color: #0056b3;
+}
+
+/* vid(sbar) */
+
+
+.ag2vid {
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ag2vid-main {
+  
+  padding: 2vw;
+  border-radius: 1vw;
+  
+}
+
+.ag2vid-cards {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vw;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  
+}
+
+.ag2vid-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 20vw; 
+  margin-bottom: 3vw;
+  margin-right: 2vw; 
+  border: 0.1vw solid #ddd; 
+  border-radius: 1.6vw;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.ag2vid-card:last-child {
+  margin-right: 0;
+}
+.ag2vid-card:hover {
+  transform: scale(1.05);
+}
+
+.ag2vid-card img {
+  width: 100%;
+  height: 14vw; /* Adjust the image height as needed */
+  object-fit: cover;
+}
+
+.ag2vid-card-body {
+  padding: 1.5vw;
+  
+}
+
+.ag2vid-card-title {
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+
+.ag2vid-card-text {
+  font-size: 1.4vw;
+  margin-bottom: 1.5vw;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8vw 1.5vw;
+  border-radius: 0.5vw;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

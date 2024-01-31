@@ -1,0 +1,463 @@
+/* .edu{
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+
+    top: 0;
+    left: 0;
+
+}
+.Education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #859a90; 
+    color: #333; 
+    font-size: 12px;
+    padding: 10px; 
+  }  .Education p {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+  
+  .Education {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .centered-box{
+    text-align:center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 90%;
+    background-color: #fff;
+} */
+.edu {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed;  */
+  top: 0;
+  left: 0;
+}
+
+.Education {
+  display: flex;
+  flex-direction: column; /* Adjust to stack child elements vertically */
+  justify-content: center;
+  align-items: center;
+  max-height: 50vh; /* Set a maximum height for the card */
+  overflow: hidden; /* Hide overflowing content */
+  background-color: #859a90;
+  color: #333;
+  font-size: 1.2rem; /* Adjust font size */
+  padding: 2rem; /* Adjust padding */
+  box-sizing: border-box; /* Include padding in max-height calculation */
+}
+
+/* Style for child elements within .Education */
+.Education p {
+  font-size: 1rem;
+  margin: 1rem 0; /* Adjust margin */
+}
+
+/* Add a box shadow to .Education */
+.Education {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centered-box {
+  text-align: center;
+  padding: 2rem; /* Adjust padding */
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 40rem; /* Adjust max-width */
+  width: 90%;
+  background-color: #fff;
+}
+
+
+/* mem gameboard */
+
+.mem-gam{
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.memMain {
+  /* height: 100vw; */
+  width: 100vw;
+  font-family: cursive;
+  /* background-color: rgb(56, 191, 228); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1.5rem;
+}
+
+.mem-header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mg-heading {
+  align-self: start;
+  font-size: 2.5rem;
+  color: #000
+}
+
+.mem-but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+  font-family: cursive;
+  width: 200px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 0.7rem;
+  border-style: none;
+  background-color: red;
+  color: white;
+  margin: 0 auto;
+}
+
+.mem-but:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.mem-board {
+  display: grid;
+  margin: 0 auto;
+  padding-right: 70px;
+  grid-template-columns: repeat(4, 9rem);
+  place-items: center;
+  row-gap: 35px;
+}
+
+.mem-comments {
+  padding: 0.25rem 1rem;
+  background-color: white;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+/* Card component */
+.mem-face {
+  height: 6rem;
+}
+
+.mem-back {
+  height: 6rem;
+  width: 6rem;
+  background-color: rgb(117, 114, 106);
+  color: rgb(77, 61, 61);
+  border: 1px solid rgb(78, 65, 65);
+  border-radius: 50%;
+}
+
+.mem-item {
+  position: relative;
+  margin: 50px; /* Ensure relative positioning for absolute children */
+}
+
+.mem-item .mem-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(90deg);
+  transition: all ease-in 0.25s 0.25s;
+}
+
+.memtoggled .mem-face {
+  transform: rotateY(0deg);
+  transition-delay: 0s;
+}
+
+.mem-item .mem-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all ease-in 0.25s 0.25s;
+}
+
+.memtoggled .mem-back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+/* WordSearchGame */
+.word-search-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sword-score {
+  
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 10px 10px;
+  background-color: skyblue;
+  color: #4c4545;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  box-shadow: -2px 3px 2px 1px #bbb3b3;
+  text-align: center;
+}
+
+.sword-but{
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #4f5e6f;
+  color: rgb(189, 169, 169);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow:-2px 3px 2px 1px #bbb3b3 ;
+}
+
+.sword-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 160px);
+  gap: 20px;
+  background-color: rgb(141, 193, 174);
+  color:rgb(41, 47, 53)
+}
+
+.sword-grid-row {
+  display: flex;
+}
+
+.sword-grid-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.sword-grid-cell.selected {
+  background-color: #e2e7ed;
+}
+
+.sword-list{
+
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 5px 10px;
+  background-color: #4d6379;
+  
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow:-2px 3px 2px 1px #bbb3b3 ; 
+}
+
+.sword-list h2 {
+  margin-bottom: 5px;
+}
+
+.sword-list ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.sword-list li {
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+  width:200px;
+}
+
+.sword-list li.found {
+  background-color: #809c80;
+}
+
+/* JumbledSentence */
+.jumb{
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jumb-app {
+  text-align: center;
+  margin: 4rem;
+  margin-top: 4rem;
+}
+
+.sj-questionCard{
+    margin: 0 auto;
+    background-color: #B8D8E3;
+    padding: 16px;
+    border-radius: 16px;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    height: auto;
+    color: #535878;
+  }
+  
+  .sj-input{
+    border: 2px solid #9DB0CE;
+    width: 500px;
+    height: 45px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .sj-resultCard{
+    margin: 0 auto;
+    background-color: #B8D8E3;
+    padding: 16px;
+    border-radius: 16px;
+    width: 40%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    height: auto;
+    color: #535878;
+    margin-top: 20px;
+  }
+
+  /* wordjumble */
+  .j-word{
+    background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.jword{
+  text-align: center;
+  margin: 20px;
+}
+.word-jumble {
+  background-color: rgb(229, 199, 135);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 80px;
+}
+.jumbled-word {
+  font-size: 24px;
+  margin:20px;
+  padding: 10px 20px;
+  background-color:rgb(207, 209, 205);
+  color: #341c1c;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow:-2px 3px 2px 1px #3b3232 ;
+}
+word-jumble-inp {
+  padding: 10px;
+  font-size: 16px;
+}
+ .jword-but{
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #4f5e6f;
+  color: rgb(189, 169, 169);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow:-2px 3px 2px 1px #bbb3b3 ;
+}
+.jword-but:hover {
+  background-color: #005bb6;
+}
+.jword-score {
+  font-size: 13px;
+  padding: 5px 10px;
+  background-color: skyblue;
+  color: #4f1212;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  box-shadow:-2px 3px 2px 1px #bbb3b3 ;
+  text-align: center;
+  margin-top: 40px;
+}
+.jword-h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-size:35px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(23, 21, 21)
+}
+.jword-p {
+  font-size: 2rem;
+}

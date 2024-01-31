@@ -1,0 +1,75 @@
+ .gbg {
+    background-image: url("hgamebg.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .psl .playhead {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+  }
+  
+  .ccgame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gamecard1 {
+    width: 350px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gamecard1 .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gamecard1 .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .play {
+    margin-top: 15px;
+    padding: 8px 25px;
+    border: solid 2px;
+    border-radius: 50px;
+    background-color: #bda3dd;
+  }
+  
+  /* Styles for the navigation arrows container */
+  .navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Styles for the navigation arrow buttons */
+  .hgame-arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hgame-arrow-button img {
+    width: 55px;
+    height: auto;
+  }
+  
