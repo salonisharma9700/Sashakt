@@ -1,10 +1,10 @@
+# Sashakt
+ Empowering Children Through Playful Learning
 
-Sashakt: Empowering Children Through Playful Learning
-
-About Sashakt:
+# About Sashakt:
 Sashakt is a gamified platform designed to educate children in India about their fundamental rights and equip them with the confidence to stand up for themselves and others. It caters to children aged 8-16, using an engaging blend of games, videos, and interactive modules.
 
-Features: 
+# Features: 
 * Personalized learning: Tailored content based on the child's age group.
 * Engaging activities (8-11 years):
 * Educational games reinforcing fundamental rights concepts.
@@ -42,6 +42,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-Contact
+
+### Contact
 
 For any questions or feedback, please feel free to open an issue on this repository.
