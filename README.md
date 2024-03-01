@@ -1,7 +1,7 @@
 
 Sashakt: Empowering Children Through Playful Learning
 
-About Sashakt
+About Sashakt:
 Sashakt is a gamified platform designed to educate children in India about their fundamental rights and equip them with the confidence to stand up for themselves and others. It caters to children aged 8-16, using an engaging blend of games, videos, and interactive modules.
 
 Features: 
