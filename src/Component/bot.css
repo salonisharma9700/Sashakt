@@ -144,11 +144,11 @@
   }
   
   .about-mainpage-p1 {
-    align-self: flex-start; /* Align to the left */
+    align-self: flex-start; 
   }
   
   .about-mainpage-p2 {
-    align-self: flex-end; /* Align to the right */
+    align-self: flex-end; 
   }
   
 
@@ -230,27 +230,7 @@
     background-color: #07013d;
     box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
   }
-  /* .pcard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-    
-    box-sizing: border-box;
-    width: 190px;
-    height: 254px;
-    background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-  } */
+  
   .pcard-container {
     display: flex;
     flex-wrap: wrap;

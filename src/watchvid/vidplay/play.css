@@ -1,4 +1,4 @@
-/* Adjusted vid.css */
+/* vid.css */
 
 .video1 {
     display: flex;
@@ -10,7 +10,7 @@
     width: 900px;
     height: 450px;
     margin-top: 4rem;
-    margin-bottom: 5rem; /* Add margin to create space between the video and the button */
+    margin-bottom: 5rem;
   }
   
   .vid-ul {
@@ -127,20 +127,7 @@
   
  
   
-  /* .vid-quiz-submit-button {
-    background-color: #fbfb76;
-    color: #0f0e0e;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  } */
-  
-  /* .vid-quiz-submit-button:hover {
-    background-color: #66c7fb;
-  } */
+ 
   
   .vid-quiz-final-result {
     text-align: center;

@@ -3,13 +3,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #fff5d7; /* Set background color for the entire row */
-  padding: 20px; /* Add padding to create space around the entire row */
+  background-color: #fff5d7; 
+  padding: 20px; 
 }
 
 /* Column styling */
 .vid-col {
-  flex: 0 0 calc(50% - 20px); /* Two columns on medium devices and larger */
+  flex: 0 0 calc(50% - 20px); 
   margin-bottom: 20px;
   height: 50%;
 }
@@ -22,27 +22,22 @@
   transition: transform 0.2s ease-in-out;
   height: 100%;
   width: 25rem;
-  margin: 3rem 3.5rem 3.5rem 3rem; /* Add margin to create space between cards */
+  margin: 3rem 3.5rem 3.5rem 3rem;
 }
 
-/* Hover effect on cards */
+
 .vid-card:hover {
   transform: scale(1.05);
 }
 
-/* Card image styling */
 .vid-card-img-top {
   width: 100%;
   height: auto;
 }
-
-/* Card body styling */
 .vid-card-body {
   padding: 20px;
   height: 50%;
 }
-
-/* Card title styling */
 .vid-card-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -106,5 +101,3 @@
   height: 24px;
   transition: all 0.3s ease-in-out;
 }
-
-/* Rest of your existing CSS */

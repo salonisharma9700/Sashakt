@@ -13,20 +13,7 @@ const Home = () => {
 
   let clickHandler = async(event) => {
     event.preventDefault();
-  //   let inputage = parseInt( document.getElementById('ageuser').value);
-  //   let inputValue=inputage.value;
-  //   const age = document.getElementById("ageuser").value;
-    
-  //   if (inputage>=8 && inputage < 12) {
-  //        console.log('Age group 1');
-  //         navigate('/Ag1'); 
-  //   }else if (inputage >=12 && inputage < 17) {
-  //        console.log('Ag2');
-  //          navigate('/ag2home');
-  //   } else {
-  //       alert("Please enter a valid age.");
-  //   }
-  // }
+  
 
   try {
     const response = await axios.post('http://localhost:5000/api/users/signup', { name, age, email });
@@ -54,31 +41,6 @@ const Home = () => {
     // alert("Please enter the correct credentials to signup!");
   }
 
-  // try {
-  //   const response = await axios.post('http://localhost:5000/api/users/signin', { email });
-  //   if(response.data.auth === true)
-  //   {
-  //     const ageNumber = response.data.userAge;
-  //     if (ageNumber >= 8 && ageNumber <= 11) {
-  //         navigate("/Ag1");
-  //     } else if (ageNumber >= 12 && ageNumber <= 16) {
-  //         navigate("/ag2home");
-  //     } else {
-  //         alert("Please enter a valid age.");
-  //     }
-      
-  //     console.log(response.data.message);
-  //     localStorage.setItem('token',response.data.authtoken)
-  //   }
-  //   else
-  //   {
-  //     console.log(response.data.message);
-  //     alert(response.data.message);
-  //   }
-  // } catch (error) {
-  //   console.error('Error logging in:', error.response?.data || error.message);
-    
-  // }
 
   try {
     const response = await axios.post('http://localhost:5000/api/users/signin', { email });
@@ -166,7 +128,7 @@ const Home = () => {
             </form>
            </div> */}
 
-{/* try */}
+{/* login/signup */}
 <div className="wrapper">
   <div className="card-switch">
     <label className="switch">

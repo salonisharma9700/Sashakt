@@ -1,4 +1,4 @@
-// import './EduMain.css'
+
 import "./gamag2.css"
 import { Link } from "react-router-dom";
 const RTEducation = () => {

@@ -14,11 +14,11 @@ const WordSearchGame = () => {
   const levels = [
     { words: ['CHILD', 'PARENT', 'POWER', 'BOOK', 'BAG'], gridSize: 10 },
     { words: ['TEACHER', 'RIGHTS', 'FREEDOM', 'EDUCATION', 'EMPOWERMENT'], gridSize: 10 },
-    // Add more levels as needed
+    
   ];
 
   useEffect(() => {
-    // Initialize the grid and words for the current level
+    
     const currentLevel = levels[level - 1];
     const newGrid = Array.from({ length: currentLevel.gridSize }, () =>
       Array.from({ length: currentLevel.gridSize }, () =>
@@ -30,7 +30,6 @@ const WordSearchGame = () => {
   }, [level]);
 
   const handleCellClick = (row, col) => {
-    // Toggle the selected state of the cell
     const newSelectedCells = [...selectedCells];
     const isSelected = newSelectedCells.some(
       (cell) => cell.row === row && cell.col === col

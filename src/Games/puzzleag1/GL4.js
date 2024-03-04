@@ -105,18 +105,8 @@ const SlidePuzzle3 = () => {
     setPreviewImage("/puzzleimg/level4/exp.webp");
   };
 
-  // const handleNext = () => {
-  //   setShowQuizDiv(true);
-  //   setQuizStarted(true);
-  //   setQuizButtonVisible(false);
-  //   setShowCongrats(false);
-  //   setDroppedImages([]);
-  //   setImages([]);
-  //   setPreviewImage(null);
-  // };
   const handleNext = async () => {
     try {
-      // Make a POST request to save game progress
       await axios.post('http://localhost:5000/api/game/level', {level:4,  isCompleted:true},{headers: {
         'auth-token': authToken,
         'Content-Type': 'application/json', 

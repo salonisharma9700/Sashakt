@@ -65,16 +65,14 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header/> */}
       <MyNav/>
-      {/* <Gbot/> */}
-      {/* <React.StrictMode> */}
+      <Gbot/>
+     
       <Routes>
       <Route path="/" element={ <Home/> } />
           <Route path="/about" element={ <AboutUs/> } />
           <Route path="/parent" element={ <Parents/> } />
           <Route path="/chatbot" element={ <Chatbot/> } />
-          {/* <Route path="/feedback" element={ <Feedback/> } /> */}
           <Route path="/shakti" element={<Sashakt/>} />
           <Route path="/Ag1" element={<Age1/>} />
           <Route path="/Hgame" element={<Playgame/>}/>
@@ -114,7 +112,7 @@ function App() {
               <Route path='/GameBoard' element={<GameBoard/>}/>
               <Route path='/WordGames' element={<WordGames/>}/>
               <Route path='/McqCards' element={<McqCards/>}/>
-              {/* <Route path="/Mcq1" element={<Mcq1/>}/> */}
+              
               <Route path="/Video1" element={<Video1/>}/>
               <Route path="/Video2" element={<Video2/>}/>
               <Route path="/Video3" element={<Video3/>}/>
@@ -129,7 +127,7 @@ function App() {
 
           
       </Routes>
-      {/* </React.StrictMode> */}
+      
     </div>
   );
 }

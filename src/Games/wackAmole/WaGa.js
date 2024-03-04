@@ -67,29 +67,6 @@ const WaGame = () => {
     };
   }, [moles]);
 
-  // async function saveScoreAndLevelToServer() {
-  //   try {
-  //     await axios.post('http://localhost:5000/api/game/wagascore', {  score: score,  level: level-1, isCompleted : true},{headers: {
-  //       'auth-token': authToken,
-  //       'Content-Type': 'application/json', 
-  //     }});
-  //     console.log('Score and level saved to the server.');
-  //   } catch (error) {
-  //     console.error('Error saving data to server:', error);
-  //   }
-  // }
-
-  // async function saveQuizToServer() {
-  //   try {
-  //     await axios.post('http://localhost:5000/api/quiz/wagasave', { level: level-1, isCompleted : true},{headers: {
-  //       'auth-token': authToken,
-  //       'Content-Type': 'application/json', 
-  //     }});
-  //     console.log('Quiz level saved to the server.');
-  //   } catch (error) {
-  //     console.error('Error saving data to server:', error);
-  //   }
-  // }
   async function saveDataToServer(endpoint, data) {
     try {
       await axios.post(endpoint, data, {
@@ -104,7 +81,6 @@ const WaGame = () => {
     }
   }
   
-  // Usage
   const scoreData = { score: score, level: level - 1, isCompleted: true };
   const quizData = { level: level - 1, isCompleted: true };
   
@@ -148,7 +124,6 @@ const WaGame = () => {
       const allCorrect = currentQuestions.every((question, index) => question.correctAnswer === selectedAnswers[index]);
   
       if (allCorrect) {
-        // <img src="wam\src\img\Wbadge.png" alt="Badge"/>
         setPopUpMessage("Congratulations! You Cleared this Level!!!");
         setShowPopUp(true);
       } else {
@@ -214,10 +189,7 @@ const WaGame = () => {
             }}
           />
         ))}
-        {/* <div className="badge">
-          <img src="Wbadge.png" alt="badge"/>
         
-        </div>  */}
       </div>
       
       <div className="score-wam">
@@ -227,10 +199,7 @@ const WaGame = () => {
       <div className="wam-lev">
         <h1>Level:{level}</h1>
       </div>
-      {/* <div className="badge">
-        <img src="Wbadge.png" alt="badge"/>
-        
-      </div>  */}
+      
       
       {showLevelUp && (
         <div className="wam-level-up-popup">

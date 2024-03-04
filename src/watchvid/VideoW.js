@@ -6,41 +6,7 @@ class EduCards extends React.Component {
     render() {
         
         return (
-            // <>
-            //     <div className=" vid-main ">
-            //         <div className="vid-cards">
-            //             <div className="vid-card" style={{ width: '15rem',height:'15rem' }}>
-            //                 <img src="/vidimage1.jpg" className="vid-card-img-top" alt="..." />
-            //                 <div className="vid-card-body">
-            //                     <p className="vid-card-text"></p>
-            //                     <Link to="/watchVideo1" ><button className="vid-start-button">Start video</button></Link>
-            //                 </div>
-            //             </div>
-            //             <div className="vid-card" style={{ width: '15rem',height:'15rem' }}>
-            //                 <img src="/vidimage2.webp" className="vid-card-img-top" alt="..." />
-            //                 <div className="vid-card-body">
-            //                     <p className="vid-card-text"></p>
-            //                     <Link to="/watchVideo2" ><button className="vid-start-button">Start video</button></Link>
-            //                 </div>
-            //             </div>
-            //             <div className="vid-card" style={{ width: '15rem',height: '15rem' }}>
-            //                 <img src="/vidimage3.jpg" className="vid-card-img-top" alt="..." />
-            //                 <div className="vid-card-body">
-            //                     <p className="vid-card-text"></p>
-            //                     <Link to="/watchVideo3" ><button className="vid-start-button">Start video</button></Link>
-            //                 </div>
-            //             </div>
-            //             <div className="vid-card" style={{ width: '15rem',height:'15rem' }}>
-            //                 <img src="/vidimage4.png" className="vid-card-img-top" alt="..." />
-            //                 <div className="vid-card-body">
-            //                     <p className="vid-card-text"></p>
-            //                     <Link to="/watchVideo4" ><button className="vid-start-button">Start video</button></Link>
-            //                 </div>
-            //             </div>
-                        
-            //         </div>
-            //     </div>
-            // </>
+           
             <div className="vid-row vid-row-cols-1 vid-row-cols-md-2 vid-g-4">
       <div className="vid-col" >
         <div className="vid-card">

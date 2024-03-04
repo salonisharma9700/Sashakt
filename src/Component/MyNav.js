@@ -10,7 +10,6 @@ const MyNav = () => {
                 <Link to="/parent">Parents</Link>
                 <Link to="/chatbot">ChatBot</Link>
                 <Link to="/shakti">AboutSashakt</Link>
-                {/* <Link to="/feedback">Feedback</Link> */}
                 
                 
               </nav>

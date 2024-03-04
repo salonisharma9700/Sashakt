@@ -1,18 +1,4 @@
-// import React from "react";
-// import './bot.css'
 
-// const Sashakt = () => {
-//     return ( 
-//         <div className="shakvid">
-//             <video autoPlay muted loop id="video-background">
-//               <source src="shakvid.mp4" type="video/mp4"/>
-//             </video>
-//         </div>
-
-//     );
-// }
- 
-// export default Sashakt;
 import React from "react";
 import './bot.css';
 

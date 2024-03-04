@@ -63,7 +63,6 @@ const Playgame = () => {
           </Card.Body>
         </Card>
 
-        {/* Navigation arrows with image icons */}
         <div className="navigation-arrows">
           <button onClick={prevCard} className="hgame-arrow-button">
             <img src={leftArrowIcon} alt="Left Arrow" />
