@@ -156,14 +156,14 @@ const Gameapp = () => {
           if (isARowOfThree || isARowOfFour || isAColumnOfFour || isAColumnOfThree) {
               setScoreDisplay(prevScore => prevScore + 2);
           } else {
-              setScoreDisplay(prevScore => prevScore + 1); // Increment score for a valid move without a match
+              setScoreDisplay(prevScore => prevScore + 1); 
           }
   
           setSquareBeingDragged(null);
           setSquareBeingReplaced(null);
           setCurrentColorArrangement([...currentColorArrangement]);
       } else {
-          setCurrentColorArrangement(prevArrangement => [...prevArrangement]); // Revert the changes
+          setCurrentColorArrangement(prevArrangement => [...prevArrangement]); 
       }
   };
   
